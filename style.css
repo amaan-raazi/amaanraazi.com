@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 html, * {
     scroll-behavior: smooth;
     padding: 0;
@@ -38,6 +40,7 @@ html, * {
 #links {
     font-family: "Inter", sans-serif;
     font-weight: 600;
+    font-size: 16px;
     margin-right: 6.41%;
     margin-left: auto;
     z-index: 1;
@@ -60,25 +63,26 @@ a {
     height: 85vh;
     border-top: 130px transparent solid;
     border-left: 100px transparent solid;
-    font-family: "Poppins", sans-serif;
-    border-right: 100px transparent solid;
-    font-size: 25px;
+    font-family: "Monserrat", sans-serif;
     font-weight: 400;
+    font-size: 30px;
+    border-right: 100px transparent solid;
     line-height: 50px;
     position: relative;
 }
 
-#home {
-    font-weight: 300;
-    font-size: 50px;
-    font-family: "Josefin Sans", sans-serif;
-}
 
-#hi-heading, #about-me-heading, #projects-heading, #connect-heading {
+.heading {
+    padding-top: 45px;
     padding-bottom: 45px;
     font-size: 50px;
-    color: Red;
     font-weight: 700;
+    color: rgb(89, 89, 89);
+
+}
+
+#about {
+    font-size: 25px;
 }
 
 .social-link {
@@ -86,7 +90,6 @@ a {
 }
 
 #footer {
-    font-family: "Times New Roman", Times, serif;
     font-size: 20px;
     bottom: 0;
     position: absolute;

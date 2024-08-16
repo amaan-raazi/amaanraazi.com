@@ -20,7 +20,7 @@ window.onload = async function load() {
     document.getElementById("nav").style.background = 'rgb(30, 30, 40)';
     document.getElementById("theme-button").innerHTML = light_mode_svg;
     let i = 0;
-    let txt = 'I am Amaan Raazi, a first year Mathematics and Computer Science Student at The University of Bristol.';
+    let txt = 'I am Amaan Raazi, a first year Mathematics and Computer Science student at The University of Bristol, UK.';
     while (i < txt.length) {
         await new Promise(r => setTimeout(r, 15));
         document.getElementById('intro-text').innerHTML += txt.charAt(i);
