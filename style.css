@@ -1,0 +1,94 @@
+html, * {
+    scroll-behavior: smooth;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+#dark-mode {
+    background: black;
+    color: white;
+}
+
+#light-mode {
+    background: rgb(240, 240, 240);
+    color: black;
+}
+
+#nav {
+    background: rgb(30, 30, 40);
+    border-top: 10px transparent solid;
+    border-bottom: 10px transparent solid;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+#logo {
+    font-family: "Great Vibes", cursive;
+    font-weight: bold;
+    font-size: 30px;
+    border-left: 100px transparent solid;
+    text-decoration: none;
+}
+
+#links {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    margin-right: 6.41%;
+    margin-left: auto;
+}
+
+.nav-link {
+    margin-right: 20px;
+}
+
+a {
+    color: inherit;
+}
+
+#theme-button {
+    margin-right: 4%;
+    background: none;
+}
+
+.section {
+    height: 100vh;
+    border-top: 130px transparent solid;
+    border-left: 100px transparent solid;
+    font-family: "Poppins", sans-serif;
+    border-right: 100px transparent solid;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 50px;
+    position: relative;
+}
+
+#home {
+    font-weight: 300;
+    font-size: 50px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+#hi-heading, #about-me-heading, #projects-heading, #connect-heading {
+    padding-bottom: 45px;
+    font-size: 50px;
+    color: Red;
+    font-weight: 700;
+}
+
+.social-link {
+    display: block;
+}
+
+#footer {
+    display: inline;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    bottom: 17%;
+    height: 60px;
+    position: absolute;
+}
