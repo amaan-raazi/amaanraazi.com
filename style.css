@@ -91,6 +91,7 @@ a {
 
 #footer {
     font-size: 20px;
+    border-bottom: 30px transparent solid;
     position: absolute;
     bottom: 0;
 }
