@@ -91,6 +91,6 @@ a {
 
 #footer {
     font-size: 20px;
-    display: table-cell;
-    vertical-align: text-bottom;
+    position: absolute;
+    bottom: 0;
 }
