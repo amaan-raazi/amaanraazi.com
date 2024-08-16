@@ -56,7 +56,7 @@ a {
 }
 
 .section {
-    height: 90vh;
+    height: 85vh;
     border-top: 130px transparent solid;
     border-left: 100px transparent solid;
     font-family: "Poppins", sans-serif;
@@ -89,8 +89,4 @@ a {
     font-size: 20px;
     bottom: 0;
     position: absolute;
-}
-
-#connect{
-    height: 85vh;
 }
