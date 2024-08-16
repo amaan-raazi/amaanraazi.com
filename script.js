@@ -15,7 +15,7 @@ function switch_theme() {
 }
 
 window.onload = async function load() {
-    document.getElementById("year").innerHTML = new Date().getFullYear();
+    document.getElementById("footer").innerHTML = ("© " + new Date().getFullYear() + " Amaan Raazi. All rights reserved.");
     document.getElementsByTagName("body")[0].id = "dark-mode";
     document.getElementById("nav").style.background = 'rgb(30, 30, 40)';
     document.getElementById("theme-button").innerHTML = light_mode_svg;

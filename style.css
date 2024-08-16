@@ -60,8 +60,8 @@ a {
 }
 
 .section {
-    height: 85vh;
-    border-top: 130px transparent solid;
+    height: 88vh;
+    border-top: 12vh transparent solid;
     border-left: 100px transparent solid;
     font-family: "Monserrat", sans-serif;
     font-weight: 400;
@@ -91,6 +91,6 @@ a {
 
 #footer {
     font-size: 20px;
-    bottom: 0;
-    position: absolute;
+    display: table-cell;
+    vertical-align: text-bottom;
 }
