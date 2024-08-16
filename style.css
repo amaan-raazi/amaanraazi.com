@@ -88,7 +88,11 @@ a {
     display: inline;
     font-family: "Times New Roman", Times, serif;
     font-size: 20px;
-    bottom: 17%;
     height: 60px;
+    bottom: 0;
     position: absolute;
+}
+
+#connect{
+    height: 85vh;
 }
