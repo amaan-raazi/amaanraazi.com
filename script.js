@@ -15,16 +15,15 @@ function switch_theme() {
 }
 
 window.onload = async function load() {
+    console.log("You're a curious one, aren't you?");
+    const links = document.querySelectorAll('.nav-link');
+    links.forEach((link, i) => {
+        setTimeout(() => link.classList.add('revealed'), i * 300);
+    });
     document.getElementById("footer").innerHTML = ("© " + new Date().getFullYear() + " Amaan Raazi. All rights reserved.");
-    document.getElementsByTagName("body")[0].id = "dark-mode";
-    document.getElementById("nav").style.background = 'rgb(30, 30, 40)';
-    document.getElementById("theme-button").innerHTML = light_mode_svg;
-    let i = 0;
-    let txt = 'I am Amaan Raazi, a first year Mathematics and Computer Science student at The University of Bristol, UK.';
-    while (i < txt.length) {
-        await new Promise(r => setTimeout(r, 15));
-        document.getElementById('intro-text').innerHTML += txt.charAt(i);
-        i++;
-    }
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    document.getElementsByTagName("body")[0].id = prefersDark ? "dark-mode" : "light-mode";
+    document.getElementById("nav").style.background = prefersDark ? 'rgb(30, 30, 40)' : 'rgb(226, 226, 216)';
+    document.getElementById("theme-button").innerHTML = prefersDark ? light_mode_svg : dark_mode_svg;
 
 }
