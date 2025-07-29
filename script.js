@@ -17,8 +17,10 @@ function switch_theme() {
 window.onload = async function load() {
     console.log("You're a curious one, aren't you?");
     const links = document.querySelectorAll('.nav-link');
-    links.forEach((link, i) => {
-        setTimeout(() => link.classList.add('revealed'), i * 300);
+    requestAnimationFrame(() => {
+        links.forEach((link, i) => {
+            setTimeout(() => link.classList.add('revealed'), i * 300);
+        });
     });
     document.getElementById("footer").innerHTML = ("© " + new Date().getFullYear() + " Amaan Raazi. All rights reserved.");
     const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
